@@ -1,0 +1,31 @@
+﻿@model Crud
+
+<div class="card">
+    <div class="card-body">
+
+        <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label asp-for="Title" asp-action="Index">Title</label>
+                <input asp-for="Title" class="form-control" id="exampleInputName1" placeholder="Title">
+                <span asp-validation-for="Title"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" asp-action="Description">Description</label>
+                <input asp-for="Description" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                <span asp-validation-for="Description"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Icon">Icon</label>
+                <input asp-for="Icon" class="form-control" id="exampleInputPassword4" placeholder="Icon">
+                <span asp-validation-for="Icon"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button class="btn btn-light">Cancel</button>
+
+        </form>
+    </div>
+</div
